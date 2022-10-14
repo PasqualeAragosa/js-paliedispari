@@ -8,7 +8,7 @@ function ifPalindroma(word) {
     const size = word.length;
     let wordArray = [size];
     let wordReverseArray = [size];
-    let palindrom = true
+    let palindrom = true;
 
     for (let i = 0; i < size; i++) {
         wordArray = word.charAt(i);
