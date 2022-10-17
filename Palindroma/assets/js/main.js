@@ -11,9 +11,11 @@ function ifPalindroma(word) {
     let palindrom = true;
 
     for (let i = 0; i < size; i++) {
-        wordArray = word.charAt(i);
-        wordReverseArray = word.charAt((size - 1) - i);
+        wordArray[i] = word.charAt(i);
+        wordReverseArray[i] = word.charAt((size - 1) - i);
     }
+    console.log(wordArray);
+    console.log(wordReverseArray);
 
     for (let i = 0; i < size; i++) {
         if (wordArray[i] != wordReverseArray[i] ) {
